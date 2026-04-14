@@ -1,0 +1,25 @@
+{
+    "templates": [
+        {
+            "id": "accumulator",
+            "name": "Accumulator",
+            "description": "Auto cycle accumulator with configurable step, max value and reset",
+            "file": "Accumulator_Rev1.0.0.260412.project",
+            "version": "Rev1.0.0.260412",
+            "variables": [
+                { "name": "PLC_PRG.nAccumulator", "type": "INT", "description": "Accumulator value", "defaultValue": 0, "alarm": { "high": 900, "low": -900 } },
+                { "name": "PLC_PRG.nStep", "type": "INT", "description": "Step size", "defaultValue": 1 },
+                { "name": "PLC_PRG.nMaxValue", "type": "INT", "description": "Cycle max value", "defaultValue": 1000 },
+                { "name": "PLC_PRG.nCycleCount", "type": "DINT", "description": "Cycle count", "defaultValue": 0 },
+                { "name": "PLC_PRG.bEnable", "type": "BOOL", "description": "Enable switch", "defaultValue": true },
+                { "name": "PLC_PRG.bReset", "type": "BOOL", "description": "Reset switch", "defaultValue": false }
+            ],
+            "tags": ["accumulator", "counter", "cycle"]
+        }
+    ],
+    "defaultDevice": {
+        "type": 4096,
+        "id": "0000 0004",
+        "name": "CODESYS Control Win V3 x64"
+    }
+}
