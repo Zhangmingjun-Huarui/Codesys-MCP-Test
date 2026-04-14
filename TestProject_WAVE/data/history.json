@@ -1,0 +1,842 @@
+[
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#46", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959552943.8477
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#75", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959554748.6191
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#105", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959556581.1082
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#137", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959558451.4695
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#174", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959560259.9792
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#210", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959562103.4241
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#246", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959563927.925
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#275", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959565751.709
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#305", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959567590.8889
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#334", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959569413.1851
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#56", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959745604.1184
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#104", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959748055.9463
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#152", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959750316.8486
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#200", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959752753.2959
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#245", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959755189.0183
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#293", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959757455.1772
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#337", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959759882.126
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#382", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959762153.3203
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#431", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959764487.1064
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#480", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959766938.4307
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#528", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959769361.5112
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#573", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959771813.5146
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#621", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959774091.4917
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#666", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959776547.7144
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#710", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959778803.5203
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#758", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959781061.3862
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#807", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959783510.2998
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#853", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959785945.3584
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#892", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959788395.4927
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#932", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959790845.7107
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#971", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959793304.6035
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1010", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959795738.1667
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1049", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959798172.0811
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1088", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959800655.3345
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1128", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959803098.7014
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1167", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959805569.3054
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1206", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959807987.0454
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1245", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959810440.155
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1284", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959812895.05
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1324", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959815344.2307
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1363", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959817809.2651
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1402", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959820255.127
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1441", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959822704.0405
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1480", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959825144.6152
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1520", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959827608.9097
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1559", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959830070.3887
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1599", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959832527.5498
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1638", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959834983.7341
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1678", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959837439.9263
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1717", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959839893.9668
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1757", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959842337.7151
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1796", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959844839.0654
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1844", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959847315.9941
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1892", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959849761.0854
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1941", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959852178.894
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#1989", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959854660.5073
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2038", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959857112.9226
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2096", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959860167.3203
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2141", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959862551.6663
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2186", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959864829.75
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2231", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959867111.0688
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2277", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959869386.7036
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2316", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959871834.0835
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2355", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959874283.8135
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2394", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959876722.8545
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2434", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959879232.1167
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2473", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959881656.9824
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2512", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959884086.9141
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2551", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959886544.2581
+  }, 
+  {
+    "values": {
+      "GVL_WebInterface.rSineOffset": "REAL#0", 
+      "GVL_WebInterface.rSineFrequency": "REAL#1", 
+      "GVL_WebInterface.rSineOutput": "REAL#0", 
+      "GVL_WebInterface.xSineRunning": "FALSE", 
+      "GVL_WebInterface.diCycleCount": "DINT#2591", 
+      "GVL_WebInterface.xSineEnable": "FALSE", 
+      "GVL_WebInterface.rSineAmplitude": "REAL#1"
+    }, 
+    "timestamp": 1775959888971.0618
+  }
+]
