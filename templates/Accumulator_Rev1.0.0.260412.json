@@ -1,0 +1,52 @@
+{
+    "name": "Accumulator",
+    "version": "Rev1.0.0.260412",
+    "description": "自循环累加程序模板 - 实现自动循环累加、循环计数、使能控制和复位功能",
+    "file": "Accumulator_Rev1.0.0.260412.project",
+    "device": {
+        "type": "CODESYS Control Win V3 x64",
+        "deviceId": "type=4096, Id='0000 0004'",
+        "simulation": false
+    },
+    "variables": {
+        "PRG_Accumulator.iAccumulator": {
+            "type": "INT",
+            "description": "累加器当前值",
+            "initialValue": 0,
+            "alarm": {
+                "high": 900,
+                "highHigh": 950,
+                "low": -1,
+                "lowLow": -1
+            }
+        },
+        "PRG_Accumulator.diCycleCount": {
+            "type": "DINT",
+            "description": "循环完成计数",
+            "initialValue": 0
+        },
+        "PRG_Accumulator.xEnable": {
+            "type": "BOOL",
+            "description": "累加使能开关",
+            "initialValue": true
+        },
+        "PRG_Accumulator.iStep": {
+            "type": "INT",
+            "description": "累加步长",
+            "initialValue": 1
+        },
+        "PRG_Accumulator.iMaxValue": {
+            "type": "INT",
+            "description": "循环上限值",
+            "initialValue": 1000
+        },
+        "PRG_Accumulator.xReset": {
+            "type": "BOOL",
+            "description": "复位开关",
+            "initialValue": false
+        }
+    },
+    "author": "CODESYS MCP Developer",
+    "createdAt": "2026-04-12",
+    "tags": ["accumulator", "cycle", "counter", "basic"]
+}
