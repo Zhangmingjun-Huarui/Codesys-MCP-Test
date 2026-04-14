@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODESYS 正弦波监控系统</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #16a34a;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        .header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header h1 { font-size: 18px; font-weight: 600; }
+        .header .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success);
+            animation: pulse 2s infinite;
+        }
+        .status-dot.disconnected { background: var(--danger); animation: none; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            gap: 16px;
+        }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        .card:hover { border-color: var(--primary); }
+        .card-title {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .value-display {
+            font-size: 36px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.1;
+        }
+        .value-unit { font-size: 14px; color: var(--text-muted); margin-left: 4px; }
+        .indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .indicator.on { background: var(--success); box-shadow: 0 0 8px var(--success); }
+        .indicator.off { background: var(--danger); }
+        .chart-container { position: relative; height: 300px; }
+        canvas { width: 100% !important; height: 100% !important; }
+        .btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-card);
+            color: var(--text);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: var(--bg-card-hover); border-color: var(--primary); }
+        .btn-primary { background: var(--primary); border-color: var(--primary); }
+        .btn-primary:hover { background: var(--primary-dark); }
+        .btn-danger { background: var(--danger); border-color: var(--danger); }
+        .btn-danger:hover { background: #b91c1c; }
+        .control-panel {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .control-group label {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .control-group input {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 14px;
+            width: 120px;
+        }
+        .control-group input:focus { outline: none; border-color: var(--primary); }
+        @media (max-width: 768px) {
+            .container { padding: 12px; }
+            .value-display { font-size: 28px; }
+            .header { padding: 10px 16px; }
+            .control-panel { flex-direction: column; align-items: stretch; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📊 CODESYS 正弦波监控系统</h1>
+        <div class="status">
+            <div class="status-dot" id="wsStatus"></div>
+            <span id="wsStatusText">连接中...</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 控制面板 -->
+        <div class="card">
+            <div class="card-title">🎛️ 正弦波控制</div>
+            <div class="control-panel">
+                <button class="btn btn-primary" id="btnStart" onclick="toggleSineWave(true)">▶️ 开启</button>
+                <button class="btn btn-danger" id="btnStop" onclick="toggleSineWave(false)">⏹️ 关闭</button>
+                <div class="control-group">
+                    <label>振幅</label>
+                    <input type="number" id="amplitude" value="1.0" step="0.1" min="0.1" max="10.0" onchange="updateParameters()">
+                </div>
+                <div class="control-group">
+                    <label>频率 (Hz)</label>
+                    <input type="number" id="frequency" value="1.0" step="0.1" min="0.1" max="10.0" onchange="updateParameters()">
+                </div>
+                <div class="control-group">
+                    <label>偏移</label>
+                    <input type="number" id="offset" value="0.0" step="0.1" min="-5.0" max="5.0" onchange="updateParameters()">
+                </div>
+            </div>
+        </div>
+
+        <!-- 实时数据显示 -->
+        <div class="grid grid-3">
+            <div class="card">
+                <div class="card-title">正弦波输出 (rSineOutput)</div>
+                <div class="value-display" id="val-output">--</div>
+                <div style="margin-top:8px;font-size:12px;color:var(--text-muted)">当前值</div>
+            </div>
+            <div class="card">
+                <div class="card-title">运行状态 (xSineRunning)</div>
+                <div style="display:flex;align-items:center;gap:8px">
+                    <span class="indicator off" id="val-running-ind"></span>
+                    <span class="value-display" id="val-running" style="font-size:24px">--</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">系统循环计数</div>
+                <div class="value-display" id="val-cyclecount">--</div>
+                <div style="margin-top:8px;font-size:12px;color:var(--text-muted)">系统运行状态</div>
+            </div>
+        </div>
+
+        <!-- 趋势图表 -->
+        <div class="grid grid-2" style="margin-top:16px">
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-title">📈 正弦波趋势 (1秒刷新)</div>
+                <div class="chart-container">
+                    <canvas id="sineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const API = window.location.origin;
+    let ws = null;
+    let trendData = [];
+    let isConnected = false;
+
+    // WebSocket连接
+    function connectWS() {
+        const protocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+        ws = new WebSocket(`${protocol}//${location.host}/ws`);
+        
+        ws.onopen = () => {
+            document.getElementById('wsStatus').classList.remove('disconnected');
+            document.getElementById('wsStatusText').textContent = '已连接';
+            isConnected = true;
+        };
+        
+        ws.onmessage = (e) => {
+            try {
+                const data = JSON.parse(e.data);
+                updateDisplay(data);
+            } catch (err) { console.error('WebSocket message parse error:', err); }
+        };
+        
+        ws.onclose = () => {
+            document.getElementById('wsStatus').classList.add('disconnected');
+            document.getElementById('wsStatusText').textContent = '已断开';
+            isConnected = false;
+            setTimeout(connectWS, 3000); // 3秒后重连
+        };
+        
+        ws.onerror = (err) => {
+            console.error('WebSocket error:', err);
+        };
+    }
+
+    // 更新显示
+    function updateDisplay(data) {
+        if (!data.samples || data.samples.length === 0) return;
+        
+        const latest = data.samples[data.samples.length - 1];
+        const vals = latest.values || {};
+
+        // 解析变量值
+        const output = parseValue(vals['GVL_WebInterface.rSineOutput']);
+        const running = parseValue(vals['GVL_WebInterface.xSineRunning']);
+        const cycleCount = parseValue(vals['GVL_WebInterface.diCycleCount']);
+
+        // 更新显示
+        document.getElementById('val-output').textContent = typeof output === 'number' ? output.toFixed(3) : '--';
+        document.getElementById('val-running').textContent = running ? 'ON' : 'OFF';
+        document.getElementById('val-running-ind').className = 'indicator ' + (running ? 'on' : 'off');
+        document.getElementById('val-cyclecount').textContent = cycleCount;
+
+        // 更新趋势数据
+        trendData.push({ t: latest.timestamp, v: output });
+        if (trendData.length > 100) trendData = trendData.slice(-100); // 保留最近100个点
+        drawSineChart();
+    }
+
+    // 解析PLC返回的值（支持 REAL#0, DINT#334, TRUE/FALSE 等格式）
+    function parseValue(v) {
+        if (v === undefined || v === null) return '--';
+        let s = String(v);
+        if (s === 'TRUE' || s === 'True') return true;
+        if (s === 'FALSE' || s === 'False') return false;
+        // 处理 CODESYS 格式: REAL#1.5, DINT#334, INT#0 等
+        const hashIdx = s.indexOf('#');
+        if (hashIdx >= 0) {
+            s = s.substring(hashIdx + 1);
+        }
+        const num = parseFloat(s);
+        return isNaN(num) ? s : num;
+    }
+
+    // 绘制正弦波图表
+    function drawSineChart() {
+        const canvas = document.getElementById('sineChart');
+        const ctx = canvas.getContext('2d');
+        const rect = canvas.parentElement.getBoundingClientRect();
+        
+        // 设置画布尺寸
+        canvas.width = rect.width * 2;
+        canvas.height = rect.height * 2;
+        ctx.scale(2, 2);
+        
+        const w = rect.width;
+        const h = rect.height;
+        const padding = 40;
+        
+        // 清空画布
+        ctx.clearRect(0, 0, w, h);
+        
+        // 绘制网格线
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 0.5;
+        
+        // 水平网格线
+        for (let i = 0; i <= 4; i++) {
+            const y = padding + (h - 2 * padding) * i / 4;
+            ctx.beginPath();
+            ctx.moveTo(padding, y);
+            ctx.lineTo(w - padding, y);
+            ctx.stroke();
+            
+            // 标注数值
+            const val = 2.5 - (2.5 * i);
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '10px sans-serif';
+            ctx.textAlign = 'right';
+            ctx.fillText(val.toFixed(1), padding - 8, y + 4);
+        }
+        
+        // 垂直网格线
+        for (let i = 0; i <= 5; i++) {
+            const x = padding + (w - 2 * padding) * i / 5;
+            ctx.beginPath();
+            ctx.moveTo(x, padding);
+            ctx.lineTo(x, h - padding);
+            ctx.stroke();
+        }
+        
+        // 绘制正弦波
+        if (trendData.length < 2) return;
+        
+        const maxVal = 2.5;
+        const minVal = -2.5;
+        
+        ctx.beginPath();
+        ctx.strokeStyle = '#3b82f6';
+        ctx.lineWidth = 2;
+        
+        trendData.forEach((d, i) => {
+            const x = padding + ((w - 2 * padding) / (trendData.length - 1)) * i;
+            const y = h - padding - ((d.v - minVal) / (maxVal - minVal)) * (h - 2 * padding);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        });
+        
+        ctx.stroke();
+        
+        // 填充区域
+        const grad = ctx.createLinearGradient(0, 0, 0, h);
+        grad.addColorStop(0, 'rgba(59,130,246,0.3)');
+        grad.addColorStop(1, 'rgba(59,130,246,0)');
+        
+        ctx.lineTo(w - padding, h - padding);
+        ctx.lineTo(padding, h - padding);
+        ctx.closePath();
+        ctx.fillStyle = grad;
+        ctx.fill();
+    }
+
+    // 控制正弦波开关
+    function toggleSineWave(enable) {
+        if (!isConnected) {
+            alert('WebSocket未连接，请稍候重试');
+            return;
+        }
+        
+        // 发送控制命令到后端
+        fetch(`${API}/api/variables/write`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                variables: {
+                    'GVL_WebInterface.xSineEnable': enable ? 'TRUE' : 'FALSE'
+                }
+            })
+        }).then(r => r.json()).then(data => {
+            if (!data.success) {
+                console.error('控制失败:', data.error);
+            }
+        }).catch(err => {
+            console.error('控制请求错误:', err);
+        });
+    }
+
+    // 更新正弦波参数
+    function updateParameters() {
+        if (!isConnected) {
+            alert('WebSocket未连接，请稍候重试');
+            return;
+        }
+        
+        const amplitude = document.getElementById('amplitude').value;
+        const frequency = document.getElementById('frequency').value;
+        const offset = document.getElementById('offset').value;
+        
+        // 发送参数更新命令到后端
+        fetch(`${API}/api/variables/write`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                variables: {
+                    'GVL_WebInterface.rSineAmplitude': amplitude,
+                    'GVL_WebInterface.rSineFrequency': frequency,
+                    'GVL_WebInterface.rSineOffset': offset
+                }
+            })
+        }).then(r => r.json()).then(data => {
+            if (!data.success) {
+                console.error('参数更新失败:', data.error);
+            }
+        }).catch(err => {
+            console.error('参数更新请求错误:', err);
+        });
+    }
+
+    // 页面加载完成后初始化
+    window.addEventListener('DOMContentLoaded', () => {
+        connectWS();
+        
+        // 定期请求数据，确保不低于1秒刷新一次
+        setInterval(() => {
+            if (isConnected) {
+                fetch(`${API}/api/variables/latest`)
+                    .then(r => r.json())
+                    .then(data => updateDisplay(data))
+                    .catch(err => console.error('数据请求错误:', err));
+            }
+        }, 1000); // 1秒刷新一次
+    });
+
+    // 窗口大小改变时重绘图表
+    window.addEventListener('resize', drawSineChart);
+    </script>
+</body>
+</html>
